@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Don't ignore the queue template, but users might want to ignore their own
+# reflect-queue.json
