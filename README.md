@@ -1,5 +1,8 @@
 # reflect-yourself
 
+[![npm version](https://img.shields.io/npm/v/reflect-yourself.svg)](https://www.npmjs.com/package/reflect-yourself)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Add self-evolving AI skills to [Cursor](https://cursor.sh) with a single command.**
 
 Install this skill, and your Cursor agent learns from every correction you make. Run `/reflect-yourself` at the end of a session, and it captures what you taught it - turning one-time corrections into permanent knowledge.
