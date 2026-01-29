@@ -54,11 +54,21 @@ For each identified learning, extract:
 ```yaml
 learning:
   type: correction | preference | pattern | knowledge
-  content: "The actual learning statement"
+  content: "The actual learning statement (concise title)"
   context: "What triggered this learning"
   confidence: 0.60-0.95
   source: "Quote or summary from conversation"
+  reasoning: "Detailed explanation of WHY this should become a learning"
 ```
+
+**Reasoning field guidelines:**
+The `reasoning` field should explain:
+- What the user said or did that indicated this learning
+- Why this is reusable (not a one-time instruction)
+- How confident you are and why
+- The expected benefit of remembering this
+
+This reasoning becomes the "Why this was captured" explanation shown to users.
 
 #### Confidence Scoring
 
@@ -125,16 +135,46 @@ Does this improve an existing skill?
 
 ### Phase 5: Human Review
 
-Present learnings in a summary table:
+Present learnings in a **card-based format** (NOT a table - tables cause horizontal scroll with long content):
 
 ```markdown
 ## Learnings Captured
 
-| # | Type | Learning | Confidence | Destination |
-|---|------|----------|------------|-------------|
-| 1 | correction | "Always run tests before committing" | 0.85 | personal-skill: git-workflow |
-| 2 | preference | "Use TypeScript strict mode in this project" | 0.80 | project-rule: typescript.mdc |
-| 3 | pattern | "Check logs before debugging API issues" | 0.75 | project-skill: api-debugging |
+---
+
+### 1. [correction] Always run tests before committing
+**Confidence:** 0.85 | **Destination:** personal-skill: `git-workflow`
+
+> **Why this was captured:**
+> During the session, the user explicitly said "no, don't commit without running tests first" 
+> after the agent attempted to commit directly. This indicates a strong workflow preference 
+> that should be remembered across sessions.
+
+---
+
+### 2. [preference] Use TypeScript strict mode in this project
+**Confidence:** 0.80 | **Destination:** project-rule: `typescript.mdc`
+
+> **Why this was captured:**
+> User corrected loose typing with "always use strict mode here" - this is project-specific 
+> and should apply to all TypeScript files in this codebase.
+
+---
+
+### 3. [pattern] Check logs before debugging API issues
+**Confidence:** 0.75 | **Destination:** project-skill: `api-debugging`
+
+> **Why this was captured:**
+> Observed 3 instances where the user directed to check logs first when API errors occurred.
+> This pattern is specific to this project's debugging workflow.
+
+---
+
+### Discarded (below threshold or too specific):
+- "Add semicolons to line 42" - one-time instruction, not reusable
+- "The API is slow today" - observation, not actionable learning
+
+---
 
 ### Actions Available
 
@@ -144,8 +184,21 @@ For each learning, you can:
 - **Skip** - Discard this learning
 - **Redirect** - Change the destination
 
-Which learnings should I apply? (e.g., "1,2" or "all" or "1 with edit")
+Which learnings should I apply? (e.g., "1,2,3" or "all" or "1 with edit" or "skip all")
 ```
+
+#### Format Guidelines
+
+**DO:** Use card-based format with:
+- Numbered headers with type badge: `### 1. [correction] Title`
+- Metadata line: `**Confidence:** X.XX | **Destination:** location`
+- Blockquote for explanation: `> **Why this was captured:** ...`
+- Horizontal rules between cards for visual separation
+
+**DON'T:**
+- Use tables for learnings (causes horizontal scroll)
+- Write very long single-line explanations (use natural line breaks)
+- Skip the "Why this was captured" explanation (users need to understand the reasoning)
 
 ### Phase 6: Apply Learnings
 
@@ -256,6 +309,7 @@ Learnings can be queued for later processing:
       "content": "Always check for null before accessing properties",
       "confidence": 0.85,
       "source": "User corrected null pointer error",
+      "reasoning": "User explicitly corrected a null pointer bug, indicating this is a pattern to remember for defensive coding in this project.",
       "status": "pending"
     }
   ]
