@@ -1,6 +1,6 @@
 {
   "name": "reflect-yourself",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Self-learning system for Cursor that captures corrections and syncs them to skills and rules",
   "keywords": [
     "cursor",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/maorfsdev/reflect-yourself#readme",
   "bin": {
-    "reflect-yourself-install": "./bin/install.js"
+    "reflect-yourself": "./bin/install.js"
   },
   "files": [
     "bin/",

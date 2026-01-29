@@ -56,7 +56,7 @@ iwr -useb https://raw.githubusercontent.com/maorfsdev/reflect-yourself/main/inst
 
 **npm/npx:**
 ```bash
-npx reflect-yourself-install
+npx reflect-yourself
 ```
 
 **Git clone:**

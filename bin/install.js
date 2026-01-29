@@ -14,10 +14,12 @@ const QUEUE_FILE = path.join(os.homedir(), '.cursor', 'reflect-queue.json');
 
 // Get the package root (parent of bin/)
 const PKG_ROOT = path.join(__dirname, '..');
+const PKG_JSON = require(path.join(PKG_ROOT, 'package.json'));
+const VERSION = PKG_JSON.version;
 
 console.log('');
-console.log('reflect-yourself installer');
-console.log('==========================');
+console.log(`reflect-yourself installer v${VERSION}`);
+console.log('='.repeat(`reflect-yourself installer v${VERSION}`.length));
 console.log('');
 
 // Create destination directories
@@ -50,7 +52,17 @@ files.forEach(file => {
     const destPath = path.join(DEST_DIR, file.dest);
     
     if (fs.existsSync(srcPath)) {
-        fs.copyFileSync(srcPath, destPath);
+        // Inject version into SKILL.md description
+        if (file.src === 'SKILL.md') {
+            let content = fs.readFileSync(srcPath, 'utf8');
+            content = content.replace(
+                /^(description: .+?)(\.)?\s*$/m,
+                `$1 (v${VERSION}).`
+            );
+            fs.writeFileSync(destPath, content);
+        } else {
+            fs.copyFileSync(srcPath, destPath);
+        }
         console.log(`  ✓ ${file.dest}`);
     } else {
         console.error(`  ✗ ${file.src} not found`);
@@ -75,4 +87,6 @@ console.log('  /reflect-yourself-queue  - View pending learnings');
 console.log('  /reflect-yourself-skip   - Clear the queue');
 console.log('');
 console.log('Run /reflect-yourself at the end of your sessions!');
+console.log('');
+console.log('To update later, run: npx reflect-yourself@latest');
 console.log('');
