@@ -4,7 +4,7 @@
 $ErrorActionPreference = "Stop"
 
 $RepoUrl = "https://raw.githubusercontent.com/maorfsdev/reflect-yourself/main"
-$Dest = "$env:USERPROFILE\.cursor\skills-cursor\reflect-yourself"
+$Dest = "$env:USERPROFILE\.cursor\skills\reflect-yourself"
 
 Write-Host ""
 Write-Host "reflect-yourself installer" -ForegroundColor Cyan

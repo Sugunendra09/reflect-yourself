@@ -38,7 +38,7 @@ Automatically determines where learnings should go:
 
 ## Installation
 
-Installs globally to `~/.cursor/skills-cursor/` - available in all your projects, invisible to git.
+Installs globally to `~/.cursor/skills/` - available in all your projects, invisible to git.
 
 ### Quick Install (One-liner)
 
@@ -61,22 +61,22 @@ npx reflect-yourself-install
 
 **Git clone:**
 ```bash
-git clone https://github.com/maorfsdev/reflect-yourself ~/.cursor/skills-cursor/reflect-yourself
+git clone https://github.com/maorfsdev/reflect-yourself ~/.cursor/skills/reflect-yourself
 ```
 
 **Manual download:**
 1. Download ZIP from [GitHub releases](https://github.com/maorfsdev/reflect-yourself/releases)
-2. Extract to `~/.cursor/skills-cursor/reflect-yourself/`
+2. Extract to `~/.cursor/skills/reflect-yourself/`
 3. Done - the skill is now available in all projects
 
 ### Uninstall
 
 ```bash
 # macOS/Linux
-rm -rf ~/.cursor/skills-cursor/reflect-yourself ~/.cursor/reflect-queue.json
+rm -rf ~/.cursor/skills/reflect-yourself ~/.cursor/reflect-queue.json
 
 # Windows PowerShell
-Remove-Item -Recurse -Force "$env:USERPROFILE\.cursor\skills-cursor\reflect-yourself", "$env:USERPROFILE\.cursor\reflect-queue.json"
+Remove-Item -Recurse -Force "$env:USERPROFILE\.cursor\skills\reflect-yourself", "$env:USERPROFILE\.cursor\reflect-queue.json"
 ```
 
 ## Commands

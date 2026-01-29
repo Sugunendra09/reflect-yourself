@@ -5,7 +5,7 @@
 set -e
 
 REPO_URL="https://raw.githubusercontent.com/maorfsdev/reflect-yourself/main"
-DEST="$HOME/.cursor/skills-cursor/reflect-yourself"
+DEST="$HOME/.cursor/skills/reflect-yourself"
 
 echo ""
 echo "reflect-yourself installer"

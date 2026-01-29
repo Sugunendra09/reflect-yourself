@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os');
 
-const DEST_DIR = path.join(os.homedir(), '.cursor', 'skills-cursor', 'reflect-yourself');
+const DEST_DIR = path.join(os.homedir(), '.cursor', 'skills', 'reflect-yourself');
 const QUEUE_FILE = path.join(os.homedir(), '.cursor', 'reflect-queue.json');
 
 // Get the package root (parent of bin/)
