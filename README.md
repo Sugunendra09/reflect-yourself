@@ -44,12 +44,12 @@ Installs globally to `~/.cursor/skills-cursor/` - available in all your projects
 
 **macOS/Linux:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/AshkanAhmady/reflect-yourself/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/maorfsdev/reflect-yourself/main/install.sh | bash
 ```
 
 **Windows PowerShell:**
 ```powershell
-iwr -useb https://raw.githubusercontent.com/AshkanAhmady/reflect-yourself/main/install.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/maorfsdev/reflect-yourself/main/install.ps1 | iex
 ```
 
 ### Alternative Methods
@@ -61,11 +61,11 @@ npx reflect-yourself-install
 
 **Git clone:**
 ```bash
-git clone https://github.com/AshkanAhmady/reflect-yourself ~/.cursor/skills-cursor/reflect-yourself
+git clone https://github.com/maorfsdev/reflect-yourself ~/.cursor/skills-cursor/reflect-yourself
 ```
 
 **Manual download:**
-1. Download ZIP from [GitHub releases](https://github.com/AshkanAhmady/reflect-yourself/releases)
+1. Download ZIP from [GitHub releases](https://github.com/maorfsdev/reflect-yourself/releases)
 2. Extract to `~/.cursor/skills-cursor/reflect-yourself/`
 3. Done - the skill is now available in all projects
 

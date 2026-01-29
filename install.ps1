@@ -3,7 +3,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$RepoUrl = "https://raw.githubusercontent.com/AshkanAhmady/reflect-yourself/main"
+$RepoUrl = "https://raw.githubusercontent.com/maorfsdev/reflect-yourself/main"
 $Dest = "$env:USERPROFILE\.cursor\skills-cursor\reflect-yourself"
 
 Write-Host ""

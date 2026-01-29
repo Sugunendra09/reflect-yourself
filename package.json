@@ -10,13 +10,13 @@
     "rules",
     "cursor-ide"
   ],
-  "author": "AshkanAhmady",
+  "author": "maorfsdev",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AshkanAhmady/reflect-yourself.git"
+    "url": "https://github.com/maorfsdev/reflect-yourself.git"
   },
-  "homepage": "https://github.com/AshkanAhmady/reflect-yourself#readme",
+  "homepage": "https://github.com/maorfsdev/reflect-yourself#readme",
   "bin": {
     "reflect-yourself-install": "./bin/install.js"
   },

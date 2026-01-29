@@ -4,7 +4,7 @@
 
 set -e
 
-REPO_URL="https://raw.githubusercontent.com/AshkanAhmady/reflect-yourself/main"
+REPO_URL="https://raw.githubusercontent.com/maorfsdev/reflect-yourself/main"
 DEST="$HOME/.cursor/skills-cursor/reflect-yourself"
 
 echo ""
