@@ -1,8 +1,16 @@
 # reflect-yourself
 
-A self-learning system for [Cursor](https://cursor.sh) that captures corrections, discovers workflow patterns, and syncs learnings to skills and rules.
+**Add self-evolving AI skills to [Cursor](https://cursor.sh) with a single command.**
 
-Inspired by [claude-reflect](https://github.com/BayramAnnakov/claude-reflect) for Claude Code.
+Install this skill, and your Cursor agent learns from every correction you make. Run `/reflect-yourself` at the end of a session, and it captures what you taught it - turning one-time corrections into permanent knowledge.
+
+> Inspired by [claude-reflect](https://github.com/BayramAnnakov/claude-reflect) for Claude Code.
+
+## Why use this?
+
+- **Stop repeating yourself** - Correct the agent once, it remembers forever
+- **Skills that grow** - Your personal skills evolve as you work
+- **Zero config** - Just install and run `/reflect-yourself`
 
 ## What it does
 
